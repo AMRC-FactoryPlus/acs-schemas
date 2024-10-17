@@ -33,6 +33,13 @@ pull:
 run: pull
 	docker run -ti --rm "${image}" /bin/sh
 
+.PHONY: lint
+
+build: lint
+
+lint:
+	cd deploy && node bin/lint.js
+
 .PHONY: git.prepare git.check-committed git.pull amend
 
 git.prepare:
@@ -54,3 +61,4 @@ git.pull:
 
 amend:
 	git commit --amend -C HEAD -a
+
