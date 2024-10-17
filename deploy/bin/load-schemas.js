@@ -19,26 +19,6 @@ const fplus = await new ServiceClient({ env: process.env }).init();
 const cdb = fplus.ConfigDB;
 const log = fplus.debug.bound("schemas");
 
-/* Set a ConfigDB entry without allowing overwrite. We must use
- * If-None-Match here to avoid race conditions. */
-async function maybe_put (app, obj, conf) {
-    const [st] = await cdb.fetch({
-        method:     "PUT",
-        url:        `/v1/app/${app}/object/${obj}`,
-        headers:    {
-            "If-None-Match": "*",
-        },
-        body:       conf,
-    });
-    /* We succeeded or failed correctly */
-    if (st == 201 || st == 412) return;
-    /* We overwrote an existing entry */
-    if (st == 204)
-        throw new Error("Unexpected 204 response from ConfigDB PUT");
-    /* Throw as though this was the CDB interface */
-    cdb.throw(`Can't set ${app} for ${obj}`, st);
-}
-
 log("Creating required Apps");
 await cdb.create_object(UUIDs.Class.App, App.Schema);
 await cdb.put_config(UUIDs.App.Info, App.Schema,
@@ -61,12 +41,10 @@ for (const [uuid, { metadata, schema }] of Object.entries(schemas)) {
     /* XXX It might be better to use the schema title here? But at the
      * moment those aren't unique. */
     const name = `${metadata.name} (v${metadata.version})`;
-    await maybe_put(UUIDs.App.Info, uuid, { name });
-    await maybe_put(App.Metadata, uuid, metadata);
-    await maybe_put(App.Schema, uuid, schema);
+    await cdb.put_config(UUIDs.App.Info, uuid, { name });
+    await cdb.put_config(App.Metadata, uuid, metadata);
+    await cdb.put_config(App.Schema, uuid, schema);
 }
-
-/* These entries are PUT unconditionally. */
 
 const priv = JSON.parse(await $fs.readFile("private.json"));
 
