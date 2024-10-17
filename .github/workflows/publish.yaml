@@ -1,0 +1,58 @@
+name: Build & Release schemas
+
+env:
+  BASE_JS_VERSION: v3.0.0
+  IMAGE_NAME: ghcr.io/amrc-factoryplus/acs-schemas
+
+on:
+  release:
+    types: [ published ]
+
+jobs:
+  build-x86-js:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+      id-token: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Install Cosign
+        uses: sigstore/cosign-installer@v3.3.0
+      - name: Setup build
+        uses: docker/setup-buildx-action@v3
+      - name: Login to registry
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+      - name: Extract metadata
+        uses: docker/metadata-action@v5
+        id: meta
+        with:
+          images: ${{ env.IMAGE_NAME }}
+      - name: Build
+        uses: docker/build-push-action@v5
+        id: build-and-push
+        with:
+          context: .
+          push: true
+          tags: ${{ env.IMAGE_NAME }}:${{ steps.meta.outputs.version }}
+          labels: ${{  steps.meta.outputs.labels }}
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+          build-args: |
+            tag=${{ steps.meta.outputs.version }}
+            revision=${{ steps.meta.outputs.version }} (${{ github.sha }})
+            base_version=${{ env.BASE_JS_VERSION }}
+      - name: Sign image
+        shell: sh
+        env:
+          COSIGN_EXPERIMENTAL: "true"
+        # This step uses the identity token to provision an ephemeral certificate
+        # against the sigstore community Fulcio instance.
+        run: echo "${{ env.IMAGE_NAME }}:${{ steps.meta.outputs.version }}" | xargs -I {} cosign sign --yes {}@${{ steps.build-and-push.outputs.digest }}

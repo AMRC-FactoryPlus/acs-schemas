@@ -6,6 +6,8 @@ import Walk from "@root/walk";
 import git from "isomorphic-git";
 import YAML from "yaml";
 
+const source = process.env.source_repo;
+
 const schemas = "../schemas";
 const path_rx = RegExp(`^${schemas}/([\\w/_]+)-v(\\d+).yaml$`);
 
@@ -52,6 +54,7 @@ for (const [path, meta] of yamls.entries()) {
             ...meta,
             created:    changes.at(-1),
             modified:   changes.at(0),
+            source,
         },
         schema,
     };
