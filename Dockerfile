@@ -5,6 +5,7 @@ ARG base_prefix=ghcr.io/amrc-factoryplus/acs-base
 
 FROM ${base_prefix}-js-build:${base_version} AS build
 ARG revision=unknown
+ARG source_repo=https://github.com/amrc-factoryplus/acs-schemas
 
 USER root
 RUN sh -x <<'SHELL'
