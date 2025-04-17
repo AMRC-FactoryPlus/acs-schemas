@@ -1,0 +1,510 @@
+$id: urn:uuid:5ff789a8-6df2-418a-b92c-252a18df7b65
+$schema: https://json-schema.org/draft/2020-12/schema
+type: object
+properties:
+  Schema_UUID:
+    const: 5ff789a8-6df2-418a-b92c-252a18df7b65
+  Instance_UUID:
+    description: The unique identifier for this object. (A UUID specified by RFC4122).
+    type: string
+    format: uuid
+  Device_Information:
+    $ref: urn:uuid:2dd093e9-1450-44c5-be8c-c0d78e48219b
+  ActualEndTime:
+    allOf:
+      - $ref: urn:uuid:b16275f1-e443-4c41-a482-fcbdfbd20769
+      - properties:
+          Documentation:
+            default: ""
+          Sparkplug_Type:
+            enum:
+              - String
+  ActualStartTime:
+    allOf:
+      - $ref: urn:uuid:b16275f1-e443-4c41-a482-fcbdfbd20769
+      - properties:
+          Documentation:
+            default: ""
+          Sparkplug_Type:
+            enum:
+              - String
+  ActualTargetQuantity:
+    allOf:
+      - $ref: urn:uuid:b16275f1-e443-4c41-a482-fcbdfbd20769
+      - properties:
+          Documentation:
+            default: ""
+          Sparkplug_Type:
+            enum:
+              - String
+  AsPlanned:
+    allOf:
+      - $ref: urn:uuid:b16275f1-e443-4c41-a482-fcbdfbd20769
+      - properties:
+          Documentation:
+            default: ""
+          Sparkplug_Type:
+            enum:
+              - String
+  ConfigurationParameter:
+    allOf:
+      - $ref: urn:uuid:b16275f1-e443-4c41-a482-fcbdfbd20769
+      - properties:
+          Documentation:
+            default: ""
+          Sparkplug_Type:
+            enum:
+              - String
+  ConfirmationType:
+    allOf:
+      - $ref: urn:uuid:b16275f1-e443-4c41-a482-fcbdfbd20769
+      - properties:
+          Documentation:
+            default: ""
+          Sparkplug_Type:
+            enum:
+              - String
+  CreatedOn:
+    allOf:
+      - $ref: urn:uuid:b16275f1-e443-4c41-a482-fcbdfbd20769
+      - properties:
+          Documentation:
+            default: ""
+          Sparkplug_Type:
+            enum:
+              - String
+  CreationDate:
+    allOf:
+      - $ref: urn:uuid:b16275f1-e443-4c41-a482-fcbdfbd20769
+      - properties:
+          Documentation:
+            default: ""
+          Sparkplug_Type:
+            enum:
+              - String
+  DisableStatusChangeOnWoOpExec:
+    allOf:
+      - $ref: urn:uuid:b16275f1-e443-4c41-a482-fcbdfbd20769
+      - properties:
+          Documentation:
+            default: ""
+          Sparkplug_Type:
+            enum:
+              - String
+  DueDate:
+    allOf:
+      - $ref: urn:uuid:b16275f1-e443-4c41-a482-fcbdfbd20769
+      - properties:
+          Documentation:
+            default: ""
+          Sparkplug_Type:
+            enum:
+              - String
+  Enterprise:
+    allOf:
+      - $ref: urn:uuid:b16275f1-e443-4c41-a482-fcbdfbd20769
+      - properties:
+          Documentation:
+            default: ""
+          Sparkplug_Type:
+            enum:
+              - String
+  EntityType:
+    allOf:
+      - $ref: urn:uuid:b16275f1-e443-4c41-a482-fcbdfbd20769
+      - properties:
+          Documentation:
+            default: ""
+          Sparkplug_Type:
+            enum:
+              - String
+  ERPOrder:
+    allOf:
+      - $ref: urn:uuid:b16275f1-e443-4c41-a482-fcbdfbd20769
+      - properties:
+          Documentation:
+            default: ""
+          Sparkplug_Type:
+            enum:
+              - String
+  EstimatedEndTime:
+    allOf:
+      - $ref: urn:uuid:b16275f1-e443-4c41-a482-fcbdfbd20769
+      - properties:
+          Documentation:
+            default: ""
+          Sparkplug_Type:
+            enum:
+              - String
+  EstimatedStartTime:
+    allOf:
+      - $ref: urn:uuid:b16275f1-e443-4c41-a482-fcbdfbd20769
+      - properties:
+          Documentation:
+            default: ""
+          Sparkplug_Type:
+            enum:
+              - String
+  FinalMaterial:
+    allOf:
+      - $ref: urn:uuid:b16275f1-e443-4c41-a482-fcbdfbd20769
+      - properties:
+          Documentation:
+            default: ""
+          Sparkplug_Type:
+            enum:
+              - String
+  Id:
+    allOf:
+      - $ref: urn:uuid:b16275f1-e443-4c41-a482-fcbdfbd20769
+      - properties:
+          Documentation:
+            default: ""
+          Sparkplug_Type:
+            enum:
+              - String
+  InitialQuantity:
+    allOf:
+      - $ref: urn:uuid:b16275f1-e443-4c41-a482-fcbdfbd20769
+      - properties:
+          Documentation:
+            default: ""
+          Sparkplug_Type:
+            enum:
+              - String
+  IsFrozen:
+    allOf:
+      - $ref: urn:uuid:b16275f1-e443-4c41-a482-fcbdfbd20769
+      - properties:
+          Documentation:
+            default: ""
+          Sparkplug_Type:
+            enum:
+              - String
+  IsLocked:
+    allOf:
+      - $ref: urn:uuid:b16275f1-e443-4c41-a482-fcbdfbd20769
+      - properties:
+          Documentation:
+            default: ""
+          Sparkplug_Type:
+            enum:
+              - String
+  IsUnderScheduling:
+    allOf:
+      - $ref: urn:uuid:b16275f1-e443-4c41-a482-fcbdfbd20769
+      - properties:
+          Documentation:
+            default: ""
+          Sparkplug_Type:
+            enum:
+              - String
+  LastUpdatedOn:
+    allOf:
+      - $ref: urn:uuid:b16275f1-e443-4c41-a482-fcbdfbd20769
+      - properties:
+          Documentation:
+            default: ""
+          Sparkplug_Type:
+            enum:
+              - String
+  MasterPlan:
+    allOf:
+      - $ref: urn:uuid:b16275f1-e443-4c41-a482-fcbdfbd20769
+      - properties:
+          Documentation:
+            default: ""
+          Sparkplug_Type:
+            enum:
+              - String
+  Name:
+    allOf:
+      - $ref: urn:uuid:b16275f1-e443-4c41-a482-fcbdfbd20769
+      - properties:
+          Documentation:
+            default: ""
+          Sparkplug_Type:
+            enum:
+              - String
+  NId:
+    allOf:
+      - $ref: urn:uuid:b16275f1-e443-4c41-a482-fcbdfbd20769
+      - properties:
+          Documentation:
+            default: ""
+          Sparkplug_Type:
+            enum:
+              - String
+  Notes:
+    allOf:
+      - $ref: urn:uuid:b16275f1-e443-4c41-a482-fcbdfbd20769
+      - properties:
+          Documentation:
+            default: ""
+          Sparkplug_Type:
+            enum:
+              - String
+  ParentBatch:
+    allOf:
+      - $ref: urn:uuid:b16275f1-e443-4c41-a482-fcbdfbd20769
+      - properties:
+          Documentation:
+            default: ""
+          Sparkplug_Type:
+            enum:
+              - String
+  ParentOrder:
+    allOf:
+      - $ref: urn:uuid:b16275f1-e443-4c41-a482-fcbdfbd20769
+      - properties:
+          Documentation:
+            default: ""
+          Sparkplug_Type:
+            enum:
+              - String
+  ParentOrder_Id:
+    allOf:
+      - $ref: urn:uuid:b16275f1-e443-4c41-a482-fcbdfbd20769
+      - properties:
+          Documentation:
+            default: ""
+          Sparkplug_Type:
+            enum:
+              - String
+  PBOPIdentID:
+    allOf:
+      - $ref: urn:uuid:b16275f1-e443-4c41-a482-fcbdfbd20769
+      - properties:
+          Documentation:
+            default: ""
+          Sparkplug_Type:
+            enum:
+              - String
+  PlannedTargetQuantity:
+    allOf:
+      - $ref: urn:uuid:b16275f1-e443-4c41-a482-fcbdfbd20769
+      - properties:
+          Documentation:
+            default: ""
+          Sparkplug_Type:
+            enum:
+              - String
+  Plant:
+    allOf:
+      - $ref: urn:uuid:b16275f1-e443-4c41-a482-fcbdfbd20769
+      - properties:
+          Documentation:
+            default: ""
+          Sparkplug_Type:
+            enum:
+              - String
+  PoC:
+    allOf:
+      - $ref: urn:uuid:b16275f1-e443-4c41-a482-fcbdfbd20769
+      - properties:
+          Documentation:
+            default: ""
+          Sparkplug_Type:
+            enum:
+              - String
+  PreviousStatus:
+    allOf:
+      - $ref: urn:uuid:b16275f1-e443-4c41-a482-fcbdfbd20769
+      - properties:
+          Documentation:
+            default: ""
+          Sparkplug_Type:
+            enum:
+              - String
+  Priority:
+    allOf:
+      - $ref: urn:uuid:b16275f1-e443-4c41-a482-fcbdfbd20769
+      - properties:
+          Documentation:
+            default: ""
+          Sparkplug_Type:
+            enum:
+              - String
+  Process:
+    allOf:
+      - $ref: urn:uuid:b16275f1-e443-4c41-a482-fcbdfbd20769
+      - properties:
+          Documentation:
+            default: ""
+          Sparkplug_Type:
+            enum:
+              - String
+  ProcessNId:
+    allOf:
+      - $ref: urn:uuid:b16275f1-e443-4c41-a482-fcbdfbd20769
+      - properties:
+          Documentation:
+            default: ""
+          Sparkplug_Type:
+            enum:
+              - String
+  ProcessRevision:
+    allOf:
+      - $ref: urn:uuid:b16275f1-e443-4c41-a482-fcbdfbd20769
+      - properties:
+          Documentation:
+            default: ""
+          Sparkplug_Type:
+            enum:
+              - String
+  ProcessUId:
+    allOf:
+      - $ref: urn:uuid:b16275f1-e443-4c41-a482-fcbdfbd20769
+      - properties:
+          Documentation:
+            default: ""
+          Sparkplug_Type:
+            enum:
+              - String
+  ProducedQuantity:
+    allOf:
+      - $ref: urn:uuid:b16275f1-e443-4c41-a482-fcbdfbd20769
+      - properties:
+          Documentation:
+            default: ""
+          Sparkplug_Type:
+            enum:
+              - String
+  ProductionType:
+    allOf:
+      - $ref: urn:uuid:b16275f1-e443-4c41-a482-fcbdfbd20769
+      - properties:
+          Documentation:
+            default: ""
+          Sparkplug_Type:
+            enum:
+              - String
+  RealInitialQty:
+    allOf:
+      - $ref: urn:uuid:b16275f1-e443-4c41-a482-fcbdfbd20769
+      - properties:
+          Documentation:
+            default: ""
+          Sparkplug_Type:
+            enum:
+              - String
+  ReworkedQuantity:
+    allOf:
+      - $ref: urn:uuid:b16275f1-e443-4c41-a482-fcbdfbd20769
+      - properties:
+          Documentation:
+            default: ""
+          Sparkplug_Type:
+            enum:
+              - String
+  ReworkOfOrder:
+    allOf:
+      - $ref: urn:uuid:b16275f1-e443-4c41-a482-fcbdfbd20769
+      - properties:
+          Documentation:
+            default: ""
+          Sparkplug_Type:
+            enum:
+              - String
+  ReworkOfOrder_Id:
+    allOf:
+      - $ref: urn:uuid:b16275f1-e443-4c41-a482-fcbdfbd20769
+      - properties:
+          Documentation:
+            default: ""
+          Sparkplug_Type:
+            enum:
+              - String
+  RoutingID:
+    allOf:
+      - $ref: urn:uuid:b16275f1-e443-4c41-a482-fcbdfbd20769
+      - properties:
+          Documentation:
+            default: ""
+          Sparkplug_Type:
+            enum:
+              - String
+  SchedulingDate:
+    allOf:
+      - $ref: urn:uuid:b16275f1-e443-4c41-a482-fcbdfbd20769
+      - properties:
+          Documentation:
+            default: ""
+          Sparkplug_Type:
+            enum:
+              - String
+  ScrappedQuantity:
+    allOf:
+      - $ref: urn:uuid:b16275f1-e443-4c41-a482-fcbdfbd20769
+      - properties:
+          Documentation:
+            default: ""
+          Sparkplug_Type:
+            enum:
+              - String
+  Sequence:
+    allOf:
+      - $ref: urn:uuid:b16275f1-e443-4c41-a482-fcbdfbd20769
+      - properties:
+          Documentation:
+            default: ""
+          Sparkplug_Type:
+            enum:
+              - String
+  Status:
+    allOf:
+      - $ref: urn:uuid:b16275f1-e443-4c41-a482-fcbdfbd20769
+      - properties:
+          Documentation:
+            default: ""
+          Sparkplug_Type:
+            enum:
+              - String
+  TargetProductID:
+    allOf:
+      - $ref: urn:uuid:b16275f1-e443-4c41-a482-fcbdfbd20769
+      - properties:
+          Documentation:
+            default: ""
+          Sparkplug_Type:
+            enum:
+              - String
+  TargetQuantity:
+    allOf:
+      - $ref: urn:uuid:b16275f1-e443-4c41-a482-fcbdfbd20769
+      - properties:
+          Documentation:
+            default: ""
+          Sparkplug_Type:
+            enum:
+              - String
+  ToBeCleaned:
+    allOf:
+      - $ref: urn:uuid:b16275f1-e443-4c41-a482-fcbdfbd20769
+      - properties:
+          Documentation:
+            default: ""
+          Sparkplug_Type:
+            enum:
+              - String
+  ToBeUsedBillOfFeature:
+    allOf:
+      - $ref: urn:uuid:b16275f1-e443-4c41-a482-fcbdfbd20769
+      - properties:
+          Documentation:
+            default: ""
+          Sparkplug_Type:
+            enum:
+              - String
+  Metadata:
+    allOf:
+      - $ref: urn:uuid:b16275f1-e443-4c41-a482-fcbdfbd20769
+      - properties:
+          Documentation:
+            default: ""
+          Sparkplug_Type:
+            enum:
+              - String
+required:
+  - Schema_UUID
+  - Instance_UUID

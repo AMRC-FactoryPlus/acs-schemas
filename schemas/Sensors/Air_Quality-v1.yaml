@@ -1,0 +1,65 @@
+$id: urn:uuid:64ffd081-716f-458e-80c2-f0b26bb0901e
+$schema: https://json-schema.org/draft/2020-12/schema
+type: object
+properties:
+  Schema_UUID:
+    const: 64ffd081-716f-458e-80c2-f0b26bb0901e
+  Instance_UUID:
+    description: The unique identifier for this object. (A UUID specified by RFC4122).
+    type: string
+    format: uuid
+  PM1_0:
+    allOf:
+      - $ref: urn:uuid:b16275f1-e443-4c41-a482-fcbdfbd20769
+      - properties:
+          Documentation:
+            default: The concentration of particles with a diameter of 1.0 micrometers or
+              less in the air.
+          Sparkplug_Type:
+            enum:
+              - DoubleLE
+              - DoubleBE
+              - FloatLE
+              - FloatBE
+  PM2_5:
+    allOf:
+      - $ref: urn:uuid:b16275f1-e443-4c41-a482-fcbdfbd20769
+      - properties:
+          Documentation:
+            default: The concentration of particles with a diameter of 2.5 micrometers or
+              less in the air.
+          Sparkplug_Type:
+            enum:
+              - FloatLE
+              - FloatBE
+              - DoubleLE
+              - DoubleBE
+  PM4_0:
+    allOf:
+      - $ref: urn:uuid:b16275f1-e443-4c41-a482-fcbdfbd20769
+      - properties:
+          Documentation:
+            default: The concentration of particles with a diameter of 4.0 micrometers or
+              less in the air.
+          Sparkplug_Type:
+            enum:
+              - FloatLE
+              - FloatBE
+              - DoubleLE
+              - DoubleBE
+  PM10_0:
+    allOf:
+      - $ref: urn:uuid:b16275f1-e443-4c41-a482-fcbdfbd20769
+      - properties:
+          Documentation:
+            default: The concentration of particles with a diameter of 10.0 micrometers or
+              less in the air.
+          Sparkplug_Type:
+            enum:
+              - FloatLE
+              - FloatBE
+              - DoubleLE
+              - DoubleBE
+required:
+  - Schema_UUID
+  - Instance_UUID

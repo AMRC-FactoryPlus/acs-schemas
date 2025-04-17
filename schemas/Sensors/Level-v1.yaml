@@ -1,0 +1,24 @@
+$id: urn:uuid:25f86e4b-db8f-495e-b590-16cc1baabebc
+$schema: https://json-schema.org/draft/2020-12/schema
+title: Level
+type: object
+properties:
+  Schema_UUID:
+    const: 25f86e4b-db8f-495e-b590-16cc1baabebc
+  Instance_UUID:
+    description: The unique identifier for this object. (A UUID specified by RFC4122).
+    type: string
+    format: uuid
+  Level:
+    allOf:
+      - $ref: urn:uuid:b16275f1-e443-4c41-a482-fcbdfbd20769
+      - properties:
+          Sparkplug_Type:
+            enum:
+              - FloatLE
+              - FloatBE
+          Documentation:
+            default: The level value
+required:
+  - Schema_UUID
+  - Instance_UUID

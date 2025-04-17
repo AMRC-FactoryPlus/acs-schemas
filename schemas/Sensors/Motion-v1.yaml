@@ -1,0 +1,22 @@
+$id: urn:uuid:9aaaf88a-c422-42e4-9672-c35bcf379dde
+$schema: https://json-schema.org/draft/2020-12/schema
+type: object
+properties:
+  Schema_UUID:
+    const: 9aaaf88a-c422-42e4-9672-c35bcf379dde
+  Instance_UUID:
+    description: The unique identifier for this object. (A UUID specified by RFC4122).
+    type: string
+    format: uuid
+  Motion_Detected:
+    allOf:
+      - $ref: urn:uuid:b16275f1-e443-4c41-a482-fcbdfbd20769
+      - properties:
+          Documentation:
+            default: Whether motion has been detected or not.
+          Sparkplug_Type:
+            enum:
+              - Boolean
+required:
+  - Schema_UUID
+  - Instance_UUID

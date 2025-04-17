@@ -1,0 +1,36 @@
+$id: urn:uuid:7b6df3c7-2309-4996-9073-8104ae7406f6
+$schema: https://json-schema.org/draft/2020-12/schema
+type: object
+properties:
+  Schema_UUID:
+    const: 7b6df3c7-2309-4996-9073-8104ae7406f6
+  Instance_UUID:
+    description: The unique identifier for this object. (A UUID specified by RFC4122).
+    type: string
+    format: uuid
+  Enabled:
+    allOf:
+      - $ref: urn:uuid:b16275f1-e443-4c41-a482-fcbdfbd20769
+      - properties:
+          Documentation:
+            default: ""
+          Sparkplug_Type:
+            enum:
+              - Boolean
+  Flow_Established:
+    allOf:
+      - $ref: urn:uuid:b16275f1-e443-4c41-a482-fcbdfbd20769
+      - properties:
+          Documentation:
+            default: ""
+          Sparkplug_Type:
+            enum:
+              - Boolean
+  Faults:
+    patternProperties:
+      ^[a-zA-Z0-9_]*$:
+        $ref: urn:uuid:8853aa15-2228-4309-b98e-e086cefbc72c
+    type: object
+required:
+  - Schema_UUID
+  - Instance_UUID

@@ -1,0 +1,17 @@
+$id: urn:uuid:1dc6680a-8a61-47a2-b6f5-a37c29d66d26
+$schema: https://json-schema.org/draft/2020-12/schema
+type: object
+properties:
+  Schema_UUID:
+    const: 1dc6680a-8a61-47a2-b6f5-a37c29d66d26
+  Instance_UUID:
+    description: The unique identifier for this object. (A UUID specified by RFC4122).
+    type: string
+    format: uuid
+  Device_Information:
+    $ref: urn:uuid:2dd093e9-1450-44c5-be8c-c0d78e48219b
+  Needs_Cleaning:
+    $ref: urn:uuid:8853aa15-2228-4309-b98e-e086cefbc72c
+required:
+  - Schema_UUID
+  - Instance_UUID

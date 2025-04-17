@@ -1,0 +1,77 @@
+$id: urn:uuid:5d974f49-d6ed-4b59-9413-4ff084e5da55
+$schema: https://json-schema.org/draft/2020-12/schema
+type: object
+properties:
+  Schema_UUID:
+    const: 5d974f49-d6ed-4b59-9413-4ff084e5da55
+  Instance_UUID:
+    description: The unique identifier for this object. (A UUID specified by RFC4122).
+    type: string
+    format: uuid
+  Device_Information:
+    $ref: urn:uuid:2dd093e9-1450-44c5-be8c-c0d78e48219b
+  Pump_Status:
+    patternProperties:
+      ^[a-zA-Z0-9_]*$:
+        $ref: urn:uuid:4b12c922-e09e-4ed8-a14d-544a92e6addb
+    type: object
+  Motor:
+    $ref: urn:uuid:1a2c3594-d311-4f6b-865b-b97db3fa6d42
+  Crest:
+    allOf:
+      - $ref: urn:uuid:b16275f1-e443-4c41-a482-fcbdfbd20769
+      - properties:
+          Documentation:
+            default: ""
+          Sparkplug_Type:
+            enum:
+              - FloatLE
+              - FloatBE
+              - DoubleBE
+              - DoubleLE
+          Eng_Unit:
+            default: V
+  Fatigue:
+    allOf:
+      - $ref: urn:uuid:b16275f1-e443-4c41-a482-fcbdfbd20769
+      - properties:
+          Documentation:
+            default: ""
+          Sparkplug_Type:
+            enum:
+              - FloatBE
+              - FloatLE
+              - DoubleBE
+              - DoubleLE
+  Friction:
+    allOf:
+      - $ref: urn:uuid:b16275f1-e443-4c41-a482-fcbdfbd20769
+      - properties:
+          Documentation:
+            default: ""
+          Sparkplug_Type:
+            enum:
+              - String
+              - FloatLE
+              - FloatBE
+              - DoubleLE
+              - DoubleBE
+          Eng_Unit:
+            default: A
+  Impact:
+    allOf:
+      - $ref: urn:uuid:b16275f1-e443-4c41-a482-fcbdfbd20769
+      - properties:
+          Documentation:
+            default: ""
+          Sparkplug_Type:
+            enum:
+              - FloatLE
+              - FloatBE
+              - DoubleLE
+              - DoubleBE
+  Temperature:
+    $ref: urn:uuid:abaaabad-ccfd-4a93-8ad6-1aca9f863ee8
+required:
+  - Schema_UUID
+  - Instance_UUID
