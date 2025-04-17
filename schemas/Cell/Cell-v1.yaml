@@ -22,6 +22,11 @@ properties:
         patternProperties:
           ^[a-zA-Z0-9_]*$:
             $ref: urn:uuid:24a01fa5-9232-40f5-98e5-0414e383ba9d
+      Doors:
+        type: object
+        patternProperties:
+          ^[a-zA-Z0-9_]*$:
+            $ref: urn:uuid:2497b25d-c768-4e1f-8b80-024127c17487
 required:
   - Schema_UUID
   - Instance_UUID

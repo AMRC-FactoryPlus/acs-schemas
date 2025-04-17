@@ -19,6 +19,11 @@ properties:
     patternProperties:
       ^[a-zA-Z0-9_]*$:
         $ref: urn:uuid:abaaabad-ccfd-4a93-8ad6-1aca9f863ee8
+  Pressure:
+    type: object
+    patternProperties:
+      ^[a-zA-Z0-9_]*$:
+        $ref: urn:uuid:2f6565bf-72ba-4394-a6fd-90d2d5bd49dd
 required:
   - Schema_UUID
   - Instance_UUID

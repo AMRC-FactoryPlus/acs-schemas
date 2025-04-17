@@ -43,6 +43,31 @@ properties:
       ^[a-zA-Z0-9_]*$:
         $ref: urn:uuid:09a88805-9844-44dd-b686-e61608908e08
     type: object
+  Air_Sensors:
+    type: object
+    patternProperties:
+      ^[a-zA-Z0-9_]*$:
+        $ref: urn:uuid:71b177be-2c49-4ea2-8adb-be9fc1da9376
+  Water_Sensors:
+    type: object
+    patternProperties:
+      ^[a-zA-Z0-9_]*$:
+        $ref: urn:uuid:71b177be-2c49-4ea2-8adb-be9fc1da9376
+  Air_Quality_Sensors:
+    type: object
+    patternProperties:
+      ^[a-zA-Z0-9_]*$:
+        $ref: urn:uuid:64ffd081-716f-458e-80c2-f0b26bb0901e
+  Motion_Sensors:
+    type: object
+    patternProperties:
+      ^[a-zA-Z0-9_]*$:
+        $ref: urn:uuid:9aaaf88a-c422-42e4-9672-c35bcf379dde
+  Volatile_Organic_Compound_Sensors:
+    type: object
+    patternProperties:
+      ^[a-zA-Z0-9_]*$:
+        $ref: urn:uuid:37021189-7019-4744-ba3e-93e96e16c0db
 required:
   - Schema_UUID
   - Instance_UUID

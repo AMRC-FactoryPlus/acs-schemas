@@ -8,11 +8,18 @@ properties:
     description: The unique identifier for this object. (A UUID specified by RFC4122).
     type: string
     format: uuid
+  Device_Information:
+    $ref: urn:uuid:2dd093e9-1450-44c5-be8c-c0d78e48219b
   Zones:
     patternProperties:
       ^[a-zA-Z0-9_]*$:
         $ref: urn:uuid:09a88805-9844-44dd-b686-e61608908e08
     type: object
+  Air_Handling_Units:
+    type: object
+    patternProperties:
+      ^[a-zA-Z0-9_]*$:
+        $ref: urn:uuid:de7944da-d291-491e-942d-4a7e0390ac3b
 required:
   - Schema_UUID
   - Instance_UUID

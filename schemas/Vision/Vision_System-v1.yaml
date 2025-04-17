@@ -49,6 +49,15 @@ properties:
           Sparkplug_Type:
             enum:
               - Boolean
+  Inspection_Complete:
+    allOf:
+      - $ref: urn:uuid:b16275f1-e443-4c41-a482-fcbdfbd20769
+      - properties:
+          Documentation:
+            default: ""
+          Sparkplug_Type:
+            enum:
+              - Boolean
   Pattern_X_Position:
     allOf:
       - $ref: urn:uuid:b16275f1-e443-4c41-a482-fcbdfbd20769

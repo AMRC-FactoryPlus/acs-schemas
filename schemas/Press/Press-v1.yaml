@@ -139,6 +139,11 @@ properties:
               Sparkplug_Type:
                 enum:
                   - Boolean
+    Heaters:
+      type: object
+      patternProperties:
+        ^[a-zA-Z0-9_]*$:
+          $ref: urn:uuid:2a10e3d2-44ee-4910-a42e-4d6154cf39ee
     required: []
 required:
   - Schema_UUID
