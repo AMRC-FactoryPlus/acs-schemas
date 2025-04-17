@@ -1,0 +1,68 @@
+$id: urn:uuid:286772f0-1c4e-485e-99dc-339c08296596
+$schema: https://json-schema.org/draft/2020-12/schema
+type: object
+properties:
+  Schema_UUID:
+    const: 286772f0-1c4e-485e-99dc-339c08296596
+  Instance_UUID:
+    description: The unique identifier for this object. (A UUID specified by RFC4122).
+    type: string
+    format: uuid
+  Device_Information:
+    $ref: urn:uuid:2dd093e9-1450-44c5-be8c-c0d78e48219b
+  States:
+    patternProperties:
+      ^[a-zA-Z0-9_]*$:
+        $ref: urn:uuid:4b12c922-e09e-4ed8-a14d-544a92e6addb
+    type: object
+  Device_Manual:
+    allOf:
+      - $ref: urn:uuid:b16275f1-e443-4c41-a482-fcbdfbd20769
+      - properties:
+          Documentation:
+            default: ""
+          Sparkplug_Type:
+            enum:
+              - String
+  Sensors:
+    type: object
+    properties:
+      Temperature:
+        patternProperties:
+          ^[a-zA-Z0-9_]*$:
+            $ref: urn:uuid:abaaabad-ccfd-4a93-8ad6-1aca9f863ee8
+        type: object
+      Pressure:
+        patternProperties:
+          ^[a-zA-Z0-9_]*$:
+            $ref: urn:uuid:2f6565bf-72ba-4394-a6fd-90d2d5bd49dd
+        type: object
+      Flow:
+        patternProperties:
+          ^[a-zA-Z0-9_]*$:
+            $ref: urn:uuid:71b177be-2c49-4ea2-8adb-be9fc1da9376
+        type: object
+      Humidity:
+        patternProperties:
+          ^[a-zA-Z0-9_]*$:
+            $ref: urn:uuid:e4b9c2e0-e265-44ff-96aa-09ed55173000
+        type: object
+      Vibration:
+        patternProperties:
+          ^[a-zA-Z0-9_]*$:
+            $ref: urn:uuid:f0adf595-ebc1-44fd-8eff-87f7e620ed16
+        type: object
+      Level:
+        patternProperties:
+          ^[a-zA-Z0-9_]*$:
+            $ref: urn:uuid:25f86e4b-db8f-495e-b590-16cc1baabebc
+        type: object
+    required: []
+  Pumps:
+    patternProperties:
+      ^[a-zA-Z0-9_]*$:
+        $ref: urn:uuid:5d974f49-d6ed-4b59-9413-4ff084e5da55
+    type: object
+required:
+  - Schema_UUID
+  - Instance_UUID

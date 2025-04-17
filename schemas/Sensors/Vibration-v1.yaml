@@ -1,0 +1,24 @@
+$id: urn:uuid:f0adf595-ebc1-44fd-8eff-87f7e620ed16
+$schema: https://json-schema.org/draft/2020-12/schema
+title: Vibration
+type: object
+properties:
+  Schema_UUID:
+    const: f0adf595-ebc1-44fd-8eff-87f7e620ed16
+  Instance_UUID:
+    description: The unique identifier for this object. (A UUID specified by RFC4122).
+    type: string
+    format: uuid
+  Vibration:
+    allOf:
+      - $ref: urn:uuid:b16275f1-e443-4c41-a482-fcbdfbd20769
+      - properties:
+          Sparkplug_Type:
+            enum:
+              - FloatLE
+              - FloatBE
+          Documentation:
+            default: The vibration value
+required:
+  - Schema_UUID
+  - Instance_UUID

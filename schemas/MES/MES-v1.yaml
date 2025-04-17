@@ -1,25 +1,25 @@
-$id: urn:uuid:efb3c472-6346-45b7-a482-5c9bcebe866d
+$id: urn:uuid:559235b7-fb85-4cb2-ad47-24542f14dcbf
 $schema: https://json-schema.org/draft/2020-12/schema
 type: object
 properties:
   Schema_UUID:
-    const: efb3c472-6346-45b7-a482-5c9bcebe866d
+    const: 559235b7-fb85-4cb2-ad47-24542f14dcbf
   Instance_UUID:
     description: The unique identifier for this object. (A UUID specified by RFC4122).
     type: string
     format: uuid
   Device_Information:
     $ref: urn:uuid:2dd093e9-1450-44c5-be8c-c0d78e48219b
-  Zones:
-    patternProperties:
-      ^[a-zA-Z0-9_]*$:
-        $ref: urn:uuid:09a88805-9844-44dd-b686-e61608908e08
+  Active:
     type: object
-  Air_Handling_Units:
-    type: object
-    patternProperties:
-      ^[a-zA-Z0-9_]*$:
-        $ref: urn:uuid:de7944da-d291-491e-942d-4a7e0390ac3b
+    properties:
+      Work_Order:
+        $ref: urn:uuid:5ff789a8-6df2-418a-b92c-252a18df7b65
+      Operation:
+        $ref: urn:uuid:dc031fa0-371b-4018-a187-564ea1bcc9fc
+      Step:
+        $ref: urn:uuid:3456d555-1637-457b-bb07-5722b189f9f9
+    required: []
 required:
   - Schema_UUID
   - Instance_UUID

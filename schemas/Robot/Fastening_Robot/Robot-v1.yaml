@@ -1,25 +1,25 @@
-$id: urn:uuid:efb3c472-6346-45b7-a482-5c9bcebe866d
+$id: urn:uuid:6b0383f5-e6ea-44d9-8e82-39aa64d1a0d5
 $schema: https://json-schema.org/draft/2020-12/schema
+title: DELTA Robot
 type: object
 properties:
   Schema_UUID:
-    const: efb3c472-6346-45b7-a482-5c9bcebe866d
+    const: 6b0383f5-e6ea-44d9-8e82-39aa64d1a0d5
   Instance_UUID:
     description: The unique identifier for this object. (A UUID specified by RFC4122).
     type: string
     format: uuid
   Device_Information:
     $ref: urn:uuid:2dd093e9-1450-44c5-be8c-c0d78e48219b
-  Zones:
-    patternProperties:
-      ^[a-zA-Z0-9_]*$:
-        $ref: urn:uuid:09a88805-9844-44dd-b686-e61608908e08
-    type: object
-  Air_Handling_Units:
+  Base_Robot:
+    $ref: urn:uuid:6012580d-fd0a-442c-8d71-7f31f7155633
+  Fastening_End_Effectors:
     type: object
     patternProperties:
       ^[a-zA-Z0-9_]*$:
-        $ref: urn:uuid:de7944da-d291-491e-942d-4a7e0390ac3b
+        $comment: An end effector position identifier
+        $ref: urn:uuid:50718563-6da6-40ae-8929-44e170f83096
 required:
   - Schema_UUID
   - Instance_UUID
+  - Device_Information

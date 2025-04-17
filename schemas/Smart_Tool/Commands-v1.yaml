@@ -106,7 +106,7 @@ properties:
       - properties:
           Sparkplug_Type:
             enum:
-              - UInt32BE
+              - UInt8
           Documentation:
             default: Select Parameter set (PSET). Parameter set number represented by 3
               ASCII digits (range 000 to 999).
