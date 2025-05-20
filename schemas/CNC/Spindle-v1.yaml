@@ -171,6 +171,10 @@ properties:
             default: Speed setpoint value.
   Power_Monitoring:
     $ref: urn:uuid:0ff890b0-1ddb-4cb0-96eb-b0e87039df2f
+  Feedrate:
+    $ref: urn:uuid:1a2c3594-d311-4f6b-865b-b97db3fa6d42
+  Temperature:
+    $ref: urn:uuid:abaaabad-ccfd-4a93-8ad6-1aca9f863ee8
 required:
   - Schema_UUID
   - Instance_UUID
