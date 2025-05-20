@@ -27,7 +27,7 @@ properties:
     patternProperties:
       ^[a-zA-Z0-9_]*$:
         $comment: An axis name or identifier - can be any regular string
-        $ref: urn:uuid:777dd941-f426-4355-8130-e144530b1376
+        $ref: urn:uuid:c802fbc4-aa1f-45a0-86d5-7901065845db
   Fastening_Axes:
     type: object
     patternProperties:

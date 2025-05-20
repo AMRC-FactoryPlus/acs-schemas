@@ -1,10 +1,10 @@
-$id: urn:uuid:777dd941-f426-4355-8130-e144530b1376
+$id: urn:uuid:c802fbc4-aa1f-45a0-86d5-7901065845db
 $schema: https://json-schema.org/draft/2020-12/schema
 title: Non-fastening Axis
 type: object
 properties:
   Schema_UUID:
-    const: 777dd941-f426-4355-8130-e144530b1376
+    const: c802fbc4-aa1f-45a0-86d5-7901065845db
   Instance_UUID:
     description: The unique identifier for this object. (A UUID specified by RFC4122).
     type: string
