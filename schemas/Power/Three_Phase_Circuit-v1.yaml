@@ -115,6 +115,18 @@ properties:
               - DoubleBE
           Documentation:
             default: Average Power Factor
+  Frequency:
+    allOf:
+      - $ref: urn:uuid:b16275f1-e443-4c41-a482-fcbdfbd20769
+      - properties:
+          Sparkplug_Type:
+            enum:
+              - FloatLE
+              - FloatBE
+              - DoubleLE
+              - DoubleBE
+          Documentation:
+            default: Frequency (Hz)
   Frequency_Max:
     allOf:
       - $ref: urn:uuid:b16275f1-e443-4c41-a482-fcbdfbd20769
