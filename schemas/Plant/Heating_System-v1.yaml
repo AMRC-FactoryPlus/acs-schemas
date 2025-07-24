@@ -1,0 +1,18 @@
+$id: urn:uuid:fb46e665-5fc7-463c-af6e-ef69551a238f
+$schema: https://json-schema.org/draft/2020-12/schema
+type: object
+required:
+  - Schema_UUID
+  - Instance_UUID
+title: Heating System
+properties:
+  Schema_UUID:
+    const: fb46e665-5fc7-463c-af6e-ef69551a238f
+  Instance_UUID:
+    description: The unique identifier for this object. (A UUID specified by RFC4122).
+    type: string
+    format: uuid
+  Heating_Zones:
+    patternProperties:
+      ^[a-zA-Z0-9_]*$:
+        $ref: urn:uuid:210ae573-8628-4759-b17a-dd7ba3f2291d
