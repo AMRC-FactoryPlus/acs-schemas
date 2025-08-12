@@ -9,6 +9,8 @@ properties:
     description: The unique identifier for this object. (A UUID specified by RFC4122).
     type: string
     format: uuid
+  Device_Information:
+    $ref: urn:uuid:2dd093e9-1450-44c5-be8c-c0d78e48219b
   Accelerometers:
     type: object
     patternProperties:
