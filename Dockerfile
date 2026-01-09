@@ -19,9 +19,6 @@ RUN sh -x <<'SHELL'
     npm install --save=false
 SHELL
 COPY --chown=node . .
-# Finding schemas would be easier if they were in their own subdir. But
-# we can't change that while existing ACS installations rely on the
-# current repo structure.
 RUN sh -x <<'SHELL'
     cd deploy
     echo "export const GIT_VERSION=\"$revision\";" > ./lib/git-version.js
