@@ -41,6 +41,8 @@ properties:
       - properties:
           Sparkplug_Type:
             enum:
+              - FloatLE
+              - FloatBE
               - DoubleLE
               - DoubleBE
           Documentation:
@@ -51,6 +53,8 @@ properties:
       - properties:
           Sparkplug_Type:
             enum:
+              - FloatLE
+              - FloatBE
               - DoubleLE
               - DoubleBE
           Documentation:
@@ -61,6 +65,8 @@ properties:
       - properties:
           Sparkplug_Type:
             enum:
+              - FloatLE
+              - FloatBE
               - DoubleLE
               - DoubleBE
           Documentation:
@@ -71,6 +77,8 @@ properties:
       - properties:
           Sparkplug_Type:
             enum:
+              - FloatLE
+              - FloatBE
               - DoubleLE
               - DoubleBE
           Documentation:
@@ -81,6 +89,8 @@ properties:
       - properties:
           Sparkplug_Type:
             enum:
+              - FloatLE
+              - FloatBE
               - DoubleLE
               - DoubleBE
           Documentation:
@@ -91,6 +101,8 @@ properties:
       - properties:
           Sparkplug_Type:
             enum:
+              - FloatLE
+              - FloatBE
               - DoubleLE
               - DoubleBE
           Documentation:
@@ -101,6 +113,8 @@ properties:
       - properties:
           Sparkplug_Type:
             enum:
+              - FloatLE
+              - FloatBE
               - DoubleLE
               - DoubleBE
           Documentation:
@@ -111,6 +125,8 @@ properties:
       - properties:
           Sparkplug_Type:
             enum:
+              - FloatLE
+              - FloatBE
               - DoubleLE
               - DoubleBE
           Documentation:
@@ -133,6 +149,8 @@ properties:
       - properties:
           Sparkplug_Type:
             enum:
+              - FloatLE
+              - FloatBE
               - DoubleLE
               - DoubleBE
           Documentation:
@@ -143,6 +161,8 @@ properties:
       - properties:
           Sparkplug_Type:
             enum:
+              - FloatLE
+              - FloatBE
               - DoubleLE
               - DoubleBE
           Documentation:
@@ -153,6 +173,8 @@ properties:
       - properties:
           Sparkplug_Type:
             enum:
+              - FloatLE
+              - FloatBE
               - DoubleLE
               - DoubleBE
           Documentation:
@@ -163,6 +185,8 @@ properties:
       - properties:
           Sparkplug_Type:
             enum:
+              - FloatLE
+              - FloatBE
               - DoubleLE
               - DoubleBE
           Documentation:
@@ -173,6 +197,8 @@ properties:
       - properties:
           Sparkplug_Type:
             enum:
+              - FloatLE
+              - FloatBE
               - DoubleLE
               - DoubleBE
           Documentation:
@@ -183,6 +209,8 @@ properties:
       - properties:
           Sparkplug_Type:
             enum:
+              - FloatLE
+              - FloatBE
               - DoubleLE
               - DoubleBE
           Documentation:
@@ -193,6 +221,8 @@ properties:
       - properties:
           Sparkplug_Type:
             enum:
+              - FloatLE
+              - FloatBE
               - DoubleLE
               - DoubleBE
           Documentation:
