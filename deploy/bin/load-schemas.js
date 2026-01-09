@@ -39,7 +39,7 @@ for (const [uuid, { metadata, schema }] of Object.entries(schemas)) {
     /* XXX This is not atomic */
     const existing = await cdb.get_config(App.Metadata, uuid);
     if (existing && existing.source && existing.source != metadata.source) {
-        this.log("Schema %s comes from %s, skipping", uuid, existing.source);
+        log("Schema %s comes from %s, skipping", uuid, existing.source);
         continue;
     }
 
