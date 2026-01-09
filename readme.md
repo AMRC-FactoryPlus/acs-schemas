@@ -1,1 +1,0 @@
-[About Factory+ Schemas](https://factoryplus.app.amrc.co.uk/docs/schemas)

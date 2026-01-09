@@ -36,6 +36,13 @@ for (const [uuid, { metadata, schema }] of Object.entries(schemas)) {
     log("Updating schema %s v%s (%s)", 
         metadata.name, metadata.version, uuid);
 
+    /* XXX This is not atomic */
+    const existing = await cdb.get_config(App.Metadata, uuid);
+    if (existing && existing.source && existing.source != metadata.source) {
+        this.log("Schema %s comes from %s, skipping", uuid, existing.source);
+        continue;
+    }
+
     await cdb.create_object(UUIDs.Class.Schema, uuid);
 
     /* XXX It might be better to use the schema title here? But at the
