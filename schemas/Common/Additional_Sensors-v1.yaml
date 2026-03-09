@@ -26,6 +26,26 @@ properties:
     patternProperties:
       ^[a-zA-Z0-9_]*$:
         $ref: urn:uuid:2f6565bf-72ba-4394-a6fd-90d2d5bd49dd
+  Load:
+    type: object
+    patternProperties:
+      ^[a-zA-Z0-9_]*$:
+        $ref: urn:uuid:243da82a-db43-4106-a323-982e7ab2112c
+  Strain:
+    type: object
+    patternProperties:
+      ^[a-zA-Z0-9_]*$:
+        $ref: urn:uuid:28c88523-617b-42f0-a9ff-00de9795578b
+  Displacement:
+    type: object
+    patternProperties:
+      ^[a-zA-Z0-9_]*$:
+        $ref: urn:uuid:b56aa0eb-5e01-4f32-ae96-a806ee858e64
+  Analogue_Input:
+    type: object
+    patternProperties:
+      ^[a-zA-Z0-9_]*$:
+        $ref: urn:uuid:66e801e5-17f4-411a-9a69-28581d375cd6
 required:
   - Schema_UUID
   - Instance_UUID
