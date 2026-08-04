@@ -1,5 +1,6 @@
 $id: urn:uuid:875f13d7-035b-4519-bec1-6d82715050a8
 $schema: https://json-schema.org/draft/2020-12/schema
+topLevel: false
 title: Common End Effector Object
 type: object
 properties:

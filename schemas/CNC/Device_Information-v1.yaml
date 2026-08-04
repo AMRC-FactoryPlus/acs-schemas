@@ -1,5 +1,6 @@
 $id: urn:uuid:0f9f3955-a8fa-467f-b288-c39ff3fa75f1
 $schema: https://json-schema.org/draft/2020-12/schema
+topLevel: false
 title: CNC Device Information
 type: object
 properties:

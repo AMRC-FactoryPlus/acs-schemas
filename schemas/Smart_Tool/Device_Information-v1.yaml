@@ -1,5 +1,6 @@
 $id: urn:uuid:30ad8be1-8236-47a8-a411-2dbb8fb7bc7c
 $schema: https://json-schema.org/draft/2020-12/schema
+topLevel: false
 title: Smart Tool Device Information
 description: A JSON Schema representation of a Device Information object of a Smart Tool.
 type: object

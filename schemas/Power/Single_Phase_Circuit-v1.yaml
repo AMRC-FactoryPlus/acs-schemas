@@ -1,5 +1,6 @@
 $id: urn:uuid:d6de8765-bfbe-4f6b-b5d8-822dbd7f3a49
 $schema: https://json-schema.org/draft/2020-12/schema
+topLevel: false
 title: Single Phase Circuit
 type: object
 properties:

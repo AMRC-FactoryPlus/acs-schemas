@@ -1,5 +1,6 @@
 $id: urn:uuid:e39007e9-1427-4867-9d72-1c00c663db15
 $schema: https://json-schema.org/draft/2020-12/schema
+topLevel: false
 title: CNC Axis
 type: object
 properties:

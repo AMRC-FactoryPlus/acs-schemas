@@ -1,5 +1,6 @@
 $id: urn:uuid:1a1ef094-bbf4-4f15-a63d-5692ef13a9f1
 $schema: https://json-schema.org/draft/2020-12/schema
+topLevel: false
 title: Emergency Stop
 type: object
 properties:

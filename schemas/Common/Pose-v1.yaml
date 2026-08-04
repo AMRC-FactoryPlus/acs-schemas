@@ -1,5 +1,6 @@
 $id: urn:uuid:8e029429-237f-479e-9991-594437c62781
 $schema: https://json-schema.org/draft/2020-12/schema
+topLevel: false
 title: Common Pose Object
 description: This object represents the final pose (position and rotation in 3D
   space) of a part of a machine such as an end-effector.

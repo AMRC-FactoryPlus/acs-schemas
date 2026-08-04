@@ -1,5 +1,6 @@
 $id: urn:uuid:6012580d-fd0a-442c-8d71-7f31f7155633
 $schema: https://json-schema.org/draft/2020-12/schema
+topLevel: true
 title: Robotic Object
 type: object
 properties:

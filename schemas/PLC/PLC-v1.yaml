@@ -1,5 +1,6 @@
 $id: urn:uuid:f08c79a8-997d-4556-8673-941e27bd63eb
 $schema: https://json-schema.org/draft/2020-12/schema
+topLevel: true
 title: PLC
 type: object
 properties:

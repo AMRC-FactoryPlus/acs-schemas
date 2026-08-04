@@ -1,5 +1,6 @@
 $id: urn:uuid:94d42772-6202-4565-9b9a-f67d332b2e54
 $schema: https://json-schema.org/draft/2020-12/schema
+topLevel: true
 title: Coordinate Measuring Machine (CMM)
 type: object
 properties:

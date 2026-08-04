@@ -1,5 +1,6 @@
 $id: urn:uuid:8a453114-cea6-4d36-b078-4be936778ae4
 $schema: https://json-schema.org/draft/2020-12/schema
+topLevel: false
 title: AFP Heater Bulb
 type: object
 properties:

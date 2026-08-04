@@ -1,5 +1,6 @@
 $id: urn:uuid:8862ad25-d2e9-48f2-b0d8-cb74d1c69e4d
 $schema: https://json-schema.org/draft/2020-12/schema
+topLevel: false
 title: Process
 type: object
 properties:

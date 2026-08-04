@@ -1,5 +1,6 @@
 $id: urn:uuid:dab33fab-bc15-4235-9691-86b0d1e71ae2
 $schema: https://json-schema.org/draft/2020-12/schema
+topLevel: false
 title: Touch screen
 type: object
 properties:

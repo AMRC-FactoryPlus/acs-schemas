@@ -1,5 +1,6 @@
 $id: urn:uuid:1f12c529-47a9-4bd6-bdcf-96a6003c439d
 $schema: https://json-schema.org/draft/2020-12/schema
+topLevel: true
 title: Smart Tool Object
 type: object
 properties:

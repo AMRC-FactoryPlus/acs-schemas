@@ -1,5 +1,6 @@
 $id: urn:uuid:802574dd-0d43-4001-a9d0-8f08e4cfb032
 $schema: https://json-schema.org/draft/2020-12/schema
+topLevel: false
 title: 3D Printer Oven
 description: A JSON Schema representation of an Oven object of a 3D Printer.
 type: object

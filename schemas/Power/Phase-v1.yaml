@@ -1,5 +1,6 @@
 $id: urn:uuid:d16b825d-4660-4c41-bebd-c3ac7a90a86c
 $schema: https://json-schema.org/draft/2020-12/schema
+topLevel: false
 title: Electrical Phase
 type: object
 properties:

@@ -1,5 +1,6 @@
 $id: urn:uuid:15360868-2f35-4b52-990b-49329fb246fe
 $schema: https://json-schema.org/draft/2020-12/schema
+topLevel: true
 title: Schema for the Edge Agent Node metrics.
 type: object
 properties:

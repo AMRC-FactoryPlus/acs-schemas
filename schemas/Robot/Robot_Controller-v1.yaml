@@ -1,5 +1,6 @@
 $id: urn:uuid:6bb55a32-5b20-496d-b695-5346c4d201e9
 $schema: https://json-schema.org/draft/2020-12/schema
+topLevel: true
 title: Robot Controller
 type: object
 properties:

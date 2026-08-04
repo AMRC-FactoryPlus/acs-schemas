@@ -1,5 +1,6 @@
 $id: urn:uuid:962dded4-a1d2-488f-8985-f8a8d0f12a52
 $schema: https://json-schema.org/draft/2020-12/schema
+topLevel: false
 title: Common Message Object
 type: object
 properties:

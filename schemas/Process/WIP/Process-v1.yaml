@@ -1,5 +1,6 @@
 $id: urn:uuid:634d8f97-7b15-4f36-b9f4-9645930e6885
 $schema: https://json-schema.org/draft/2020-12/schema
+topLevel: false
 title: WIP Process
 type: object
 properties:

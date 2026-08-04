@@ -1,5 +1,6 @@
 $id: urn:uuid:2fed10c7-de5f-4023-89b7-9aeb10afe60b
 $schema: https://json-schema.org/draft/2020-12/schema
+topLevel: false
 title: DEPRECATED (Use Link-v1 instead)
 type: object
 properties:

@@ -1,5 +1,6 @@
 $id: urn:uuid:0a30ab9b-915d-4513-8cd3-40251b387ade
 $schema: https://json-schema.org/draft/2020-12/schema
+topLevel: false
 title: CNC Channel
 type: object
 properties:

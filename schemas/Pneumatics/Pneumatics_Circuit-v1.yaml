@@ -1,5 +1,6 @@
 $id: urn:uuid:d2cab215-2a18-45a5-8461-954814c91ecd
 $schema: https://json-schema.org/draft/2020-12/schema
+topLevel: true
 title: Pneumatics Circuit
 type: object
 properties:

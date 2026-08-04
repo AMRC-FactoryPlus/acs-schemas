@@ -1,5 +1,6 @@
 $id: urn:uuid:aa8f98ad-2c6e-4fef-86d1-f01b576b35ed
 $schema: https://json-schema.org/draft/2020-12/schema
+topLevel: true
 title: Cell
 type: object
 properties:

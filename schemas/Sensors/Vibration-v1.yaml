@@ -1,5 +1,6 @@
 $id: urn:uuid:f0adf595-ebc1-44fd-8eff-87f7e620ed16
 $schema: https://json-schema.org/draft/2020-12/schema
+topLevel: false
 title: Vibration
 type: object
 properties:

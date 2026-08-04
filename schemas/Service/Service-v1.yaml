@@ -1,5 +1,6 @@
 $id: urn:uuid:05688a03-730e-4cda-9932-172e2c62e45c
 $schema: https://json-schema.org/draft/2020-12/schema
+topLevel: true
 title: Service Provider
 type: object
 properties:

@@ -1,5 +1,6 @@
 $id: urn:uuid:a15a0500-88ee-4e56-af43-224a874ccf32
 $schema: https://json-schema.org/draft/2020-12/schema
+topLevel: false
 title: Electrical Grid Region
 type: object
 properties:

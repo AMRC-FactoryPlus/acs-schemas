@@ -1,5 +1,6 @@
 $id: urn:uuid:60e6ddee-9a8d-4c9a-9042-8f1339e7bb11
 $schema: https://json-schema.org/draft/2020-12/schema
+topLevel: true
 title: Facility Environment Characteristics
 type: object
 properties:

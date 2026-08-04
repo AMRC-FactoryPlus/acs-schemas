@@ -1,5 +1,6 @@
 $id: urn:uuid:51b96441-76f9-4627-ba14-c2e97be2cd07
 $schema: https://json-schema.org/draft/2020-12/schema
+topLevel: false
 title: Light_Intensity
 type: object
 properties:

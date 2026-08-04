@@ -1,5 +1,6 @@
 $id: urn:uuid:4ce3f6a6-7456-40d1-8818-eec3bba6bd40
 $schema: https://json-schema.org/draft/2020-12/schema
+topLevel: false
 title: Time
 type: object
 properties:

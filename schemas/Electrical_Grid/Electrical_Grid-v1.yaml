@@ -1,5 +1,6 @@
 $id: urn:uuid:935b7210-c2f6-402c-90d2-ebe3e5ffffd2
 $schema: https://json-schema.org/draft/2020-12/schema
+topLevel: true
 title: Electrical Grid
 type: object
 properties:
