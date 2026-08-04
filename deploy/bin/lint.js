@@ -79,6 +79,16 @@ const ajv = new Ajv2020({
 });
 formats(ajv);
 
+/* Not a JSON Schema keyword. It records whether a device can be built on
+ * this schema directly, rather than the schema being a part used inside
+ * another one; the ACS admin UI reads it when offering schemas for a
+ * device. Declared here so strict mode accepts it, and so the value is
+ * checked to be a boolean rather than merely tolerated. */
+ajv.addKeyword({
+    keyword: "topLevel",
+    metaSchema: { type: "boolean" },
+});
+
 await Walk.walk("../schemas", schemaWalker(schemas));
 
 for (const sch of schemas.values()) {
