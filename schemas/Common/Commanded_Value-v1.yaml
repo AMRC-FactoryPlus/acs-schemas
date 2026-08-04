@@ -1,5 +1,6 @@
 $id: urn:uuid:1a2c3594-d311-4f6b-865b-b97db3fa6d42
 $schema: https://json-schema.org/draft/2020-12/schema
+topLevel: false
 title: Commanded Value
 type: object
 properties:

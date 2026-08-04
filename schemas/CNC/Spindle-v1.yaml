@@ -1,5 +1,6 @@
 $id: urn:uuid:71df1162-40ca-4d19-bacc-95dea227d98b
 $schema: https://json-schema.org/draft/2020-12/schema
+topLevel: false
 title: CNC Spindle
 type: object
 properties:

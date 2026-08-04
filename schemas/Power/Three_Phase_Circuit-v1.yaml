@@ -1,5 +1,6 @@
 $id: urn:uuid:0d3dbae6-3195-4249-9ca1-897221db016f
 $schema: https://json-schema.org/draft/2020-12/schema
+topLevel: false
 title: Three Phase Circuit
 type: object
 properties:

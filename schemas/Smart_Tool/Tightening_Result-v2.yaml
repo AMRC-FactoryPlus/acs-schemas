@@ -1,5 +1,6 @@
 $id: urn:uuid:2a22fff4-82a0-4443-9694-e2fcbad37489
 $schema: https://json-schema.org/draft/2020-12/schema
+topLevel: false
 title: Smart Tool Tightening Result
 description: A JSON Schema representation of a Tightening Result object of a Smart Tool.
 type: object

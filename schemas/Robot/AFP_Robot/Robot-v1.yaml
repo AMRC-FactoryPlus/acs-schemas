@@ -1,5 +1,6 @@
 $id: urn:uuid:240ae2d4-2010-476d-a9ce-f03a2c419adc
 $schema: https://json-schema.org/draft/2020-12/schema
+topLevel: true
 title: AFP Robot
 type: object
 properties:

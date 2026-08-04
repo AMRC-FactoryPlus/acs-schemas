@@ -1,5 +1,6 @@
 $id: urn:uuid:abaaabad-ccfd-4a93-8ad6-1aca9f863ee8
 $schema: https://json-schema.org/draft/2020-12/schema
+topLevel: false
 title: Temperature
 type: object
 properties:

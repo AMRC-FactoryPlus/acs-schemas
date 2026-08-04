@@ -1,5 +1,6 @@
 $id: urn:uuid:e4b9c2e0-e265-44ff-96aa-09ed55173000
 $schema: https://json-schema.org/draft/2020-12/schema
+topLevel: false
 title: Humidity
 type: object
 properties:

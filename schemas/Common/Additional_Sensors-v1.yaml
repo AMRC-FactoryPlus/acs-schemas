@@ -1,5 +1,6 @@
 $id: urn:uuid:ebafa837-c572-4586-9edc-ba1cf033cd7d
 $schema: https://json-schema.org/draft/2020-12/schema
+topLevel: false
 title: Additional Sensors
 type: object
 properties:

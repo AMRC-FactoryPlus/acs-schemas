@@ -1,5 +1,6 @@
 $id: urn:uuid:c802fbc4-aa1f-45a0-86d5-7901065845db
 $schema: https://json-schema.org/draft/2020-12/schema
+topLevel: false
 title: Non-fastening Axis
 type: object
 properties:

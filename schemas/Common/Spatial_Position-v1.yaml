@@ -1,5 +1,6 @@
 $id: urn:uuid:5588360f-bcbc-4555-a8b7-8910a694ebdb
 $schema: https://json-schema.org/draft/2020-12/schema
+topLevel: false
 title: Spatial Position
 type: object
 properties:

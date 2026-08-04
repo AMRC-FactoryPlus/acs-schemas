@@ -1,5 +1,6 @@
 $id: urn:uuid:8a1ec58b-406d-41a9-a66c-67fad8ce0d1e
 $schema: https://json-schema.org/draft/2020-12/schema
+topLevel: true
 title: Lathe
 type: object
 properties:

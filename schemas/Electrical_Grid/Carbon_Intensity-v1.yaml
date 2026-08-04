@@ -1,5 +1,6 @@
 $id: urn:uuid:97c856bf-f10c-43b3-86c8-05abd1389315
 $schema: https://json-schema.org/draft/2020-12/schema
+topLevel: false
 title: Carbon Intensity
 type: object
 properties:

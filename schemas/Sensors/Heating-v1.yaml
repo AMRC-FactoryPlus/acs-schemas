@@ -1,5 +1,6 @@
 $id: urn:uuid:210ae573-8628-4759-b17a-dd7ba3f2291d
 $schema: https://json-schema.org/draft/2020-12/schema
+topLevel: false
 title: Heating
 type: object
 properties:

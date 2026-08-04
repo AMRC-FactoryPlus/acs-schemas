@@ -1,5 +1,6 @@
 $id: urn:uuid:24f1453a-0d0f-4605-aca5-f5e2edeb3a2b
 $schema: https://json-schema.org/draft/2020-12/schema
+topLevel: false
 title: Light Indicator
 description: Schema for a light indicator with desired colour and ON/OFF state.
 type: object

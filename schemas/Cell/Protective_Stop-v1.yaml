@@ -1,5 +1,6 @@
 $id: urn:uuid:24a01fa5-9232-40f5-98e5-0414e383ba9d
 $schema: https://json-schema.org/draft/2020-12/schema
+topLevel: false
 title: Protective Stop
 type: object
 properties:

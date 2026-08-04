@@ -1,5 +1,6 @@
 $id: urn:uuid:f7458af9-1377-490f-bc70-55315cb09bf9
 $schema: https://json-schema.org/draft/2020-12/schema
+topLevel: false
 title: Fastening Axis
 type: object
 properties:

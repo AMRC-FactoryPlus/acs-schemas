@@ -1,5 +1,6 @@
 $id: urn:uuid:4b12c922-e09e-4ed8-a14d-544a92e6addb
 $schema: https://json-schema.org/draft/2020-12/schema
+topLevel: false
 type: object
 properties:
   Schema_UUID:

@@ -1,5 +1,6 @@
 $id: urn:uuid:50718563-6da6-40ae-8929-44e170f83096
 $schema: https://json-schema.org/draft/2020-12/schema
+topLevel: false
 title: Fastening End Effector
 type: object
 properties:

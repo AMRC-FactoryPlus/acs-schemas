@@ -1,5 +1,6 @@
 $id: urn:uuid:ece1f234-d0cd-478e-8dad-3bf0b1966f81
 $schema: https://json-schema.org/draft/2020-12/schema
+topLevel: false
 title: Global Position
 type: object
 properties:

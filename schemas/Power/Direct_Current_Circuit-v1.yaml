@@ -1,5 +1,6 @@
 $id: urn:uuid:462a55a1-d942-4fe8-83ff-63f66bf069d4
 $schema: https://json-schema.org/draft/2020-12/schema
+topLevel: false
 title: Direct Current Circuit
 type: object
 properties:

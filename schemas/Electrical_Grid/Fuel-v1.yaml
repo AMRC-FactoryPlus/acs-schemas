@@ -1,5 +1,6 @@
 $id: urn:uuid:a6cc8a36-fa97-4157-a277-27468bd08b8a
 $schema: https://json-schema.org/draft/2020-12/schema
+topLevel: false
 title: Fuel
 type: object
 properties:

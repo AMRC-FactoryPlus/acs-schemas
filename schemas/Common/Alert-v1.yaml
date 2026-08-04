@@ -1,5 +1,6 @@
 $id: urn:uuid:8853aa15-2228-4309-b98e-e086cefbc72c
 $schema: https://json-schema.org/draft/2020-12/schema
+topLevel: false
 title: Alert which can be raised by a node.
 type: object
 properties:

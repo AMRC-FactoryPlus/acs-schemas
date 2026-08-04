@@ -1,5 +1,6 @@
 $id: urn:uuid:481dbce2-cabc-4fb1-b402-ee51f49f62b0
 $schema: https://json-schema.org/draft/2020-12/schema
+topLevel: true
 title: Power Monitoring
 type: object
 properties:

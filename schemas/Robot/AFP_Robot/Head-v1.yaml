@@ -1,5 +1,6 @@
 $id: urn:uuid:d50b78ea-83c5-4a5d-8514-68fd882eaa0b
 $schema: https://json-schema.org/draft/2020-12/schema
+topLevel: false
 title: AFP Head
 type: object
 properties:

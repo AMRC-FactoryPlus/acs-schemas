@@ -1,5 +1,6 @@
 $id: urn:uuid:94d38fe2-33d8-4902-b984-bb8c49556084
 $schema: https://json-schema.org/draft/2020-12/schema
+topLevel: true
 title: 3D Printer Object
 type: object
 properties:

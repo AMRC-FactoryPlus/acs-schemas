@@ -1,5 +1,6 @@
 $id: urn:uuid:4171ff9f-e852-4a15-98c1-b49361e8e506
 $schema: https://json-schema.org/draft/2020-12/schema
+topLevel: false
 title: Status Flag
 type: object
 properties:

@@ -1,5 +1,6 @@
 $id: urn:uuid:777dd941-f426-4355-8130-e144530b1376
 $schema: https://json-schema.org/draft/2020-12/schema
+topLevel: false
 title: Common Axis Object
 type: object
 properties:

@@ -1,5 +1,6 @@
 $id: urn:uuid:3ad967aa-9cec-429b-b31d-53e62b25c0c6
 $schema: https://json-schema.org/draft/2020-12/schema
+topLevel: false
 title: Accelerometer
 type: object
 properties:

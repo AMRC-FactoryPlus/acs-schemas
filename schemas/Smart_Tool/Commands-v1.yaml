@@ -1,5 +1,6 @@
 $id: urn:uuid:b1e713fd-744b-4209-9184-3d0a567b0a72
 $schema: https://json-schema.org/draft/2020-12/schema
+topLevel: false
 title: Smart Tool Commands
 description: A JSON Schema representation of Commands for a Smart Tool.
 type: object

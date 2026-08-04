@@ -1,5 +1,6 @@
 $id: urn:uuid:f0f6e9af-9fdf-4a35-81f7-c664563eb045
 $schema: https://json-schema.org/draft/2020-12/schema
+topLevel: true
 title: Furnace
 type: object
 properties:

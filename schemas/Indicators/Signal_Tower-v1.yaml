@@ -1,5 +1,6 @@
 $id: urn:uuid:d0cd9123-153a-4f4d-9f4a-2307e042d53d
 $schema: https://json-schema.org/draft/2020-12/schema
+topLevel: true
 title: Signal Tower
 description: Industrial signal tower/stack light schema with a user defined set of lights.
 type: object

@@ -1,5 +1,6 @@
 $id: urn:uuid:b621fd7e-ae19-486c-a810-3adcd1f537a3
 $schema: https://json-schema.org/draft/2020-12/schema
+topLevel: false
 title: Smart Tool Message
 description: A JSON Schema representation of a Message object of a Smart Tool.
 type: object

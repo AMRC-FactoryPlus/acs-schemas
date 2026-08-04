@@ -1,5 +1,6 @@
 $id: urn:uuid:4701e66e-0f77-42b0-8ddd-cef60db6ef4a
 $schema: https://json-schema.org/draft/2020-12/schema
+topLevel: true
 title: CNC Machine
 type: object
 properties:

@@ -1,5 +1,6 @@
 $id: urn:uuid:aaeaf814-521e-4e08-a8e3-3a5be64ae0c3
 $schema: https://json-schema.org/draft/2020-12/schema
+topLevel: false
 title: Carbon Dioxide
 type: object
 properties:

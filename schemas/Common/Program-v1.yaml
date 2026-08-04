@@ -1,5 +1,6 @@
 $id: urn:uuid:e0e3ad33-e2e2-416f-acc0-6e8e0c0e79fb
 $schema: https://json-schema.org/draft/2020-12/schema
+topLevel: false
 title: Program
 type: object
 properties:
